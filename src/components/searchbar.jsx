@@ -1,9 +1,7 @@
 import React from "react"
 import TextField from "@mui/material/TextField"
- 
-export default function SearchBar({ term, data, update }) {  
-// export default ({ term, data, update }) => {
- 
+
+export default function SearchBar({ term, data, update }) {
   const dataSearch = (e) => {
     const value = e.target.value.toLowerCase()
 
@@ -13,11 +11,14 @@ export default function SearchBar({ term, data, update }) {
     const filter_artist = data.filter((house) => {
       return house.artist.toLowerCase().includes(value)
     })
-
+    console.log("filter_name", filter_name)
+    console.log("filter_artist", filter_artist)
     const filter = [...new Set([...filter_name, ...filter_artist])]
 
     update(filter, value)
   }
+
+
 
   return (
     <TextField

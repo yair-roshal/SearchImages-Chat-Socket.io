@@ -7,39 +7,35 @@ import items from "../data/data"
 import SearchBar from "./searchBar"
 
 export default function Main() {
-  const  housesAll = formatData(items)
+  const housesAll = formatData(items)
   const [houses, setHouses] = useState(formatData(items))
-   const [term, setTerm] = useState("")
+  const [term, setTerm] = useState("")
 
   useEffect(() => {
-     setHouses(houses)
+    setHouses(houses)
     setTerm(term)
-  }, [houses,term])
+  }, [houses, term])
 
   function formatData(items) {
     let tempItems = items.map((item) => {
       let id = item.sys.id
-      let image = item.fields.image 
+      let image = item.fields.image
       let house = { ...item.fields, image, id }
       return house
     })
     return tempItems
-  } 
-  function updateData(data,term) {   
+  }
+  function updateData(data, term) {
     setHouses(data)
-     setTerm(term) 
-  } 
+    setTerm(term)
+  }
   if (!houses) {
     return <Loading />
   }
- 
+
   return (
     <div>
-       <SearchBar
-            term={term}
-            data={housesAll}
-            update={updateData}
-          />
+      <SearchBar term={term} data={housesAll} update={updateData} />
       <HousesList houses={houses} />
     </div>
   )
