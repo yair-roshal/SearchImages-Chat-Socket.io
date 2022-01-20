@@ -9,7 +9,6 @@ import Searchbar from "./Searchbar"
 export default function Main() {
   const [houses, setHouses] = useState(formatData(items))
   const [housesAll, setHousesAll] = useState(formatData(items))
-
   const [term, setTerm] = useState("apartment")
 
   useEffect(() => {
@@ -20,38 +19,20 @@ export default function Main() {
   function formatData(items) {
     let tempItems = items.map((item) => {
       let id = item.sys.id
-      let images = item.fields.images.map((image) => image.fields.file.url)
-      let house = { ...item.fields, images, id }
+      let image = item.fields.image 
+      let house = { ...item.fields, image, id }
       return house
     })
     return tempItems
-  }
-
-  
-  function updateData(data,term) { 
-    console.log('data_updateData', data);
-    console.log('term_updateData', term);
-
+  } 
+  function updateData(data,term) {   
     setHouses(data)
-     setTerm(term)
-
-  }
-
- 
+     setTerm(term) 
+  } 
   if (!houses) {
     return <Loading />
   }
-
-  // if (houses.length === 0) {
-  //   return (
-  //     <div className="empty-search">
-  //       <h3>unfortunately no houses matched your search parameters</h3>
-  //     </div>
-  //   );
-  // }
-
-  // setHouses(formatData(items))
-
+ 
   return (
     <div>
        <Searchbar
