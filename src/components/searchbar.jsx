@@ -11,14 +11,10 @@ export default function SearchBar({ term, data, update }) {
     const filter_artist = data.filter((house) => {
       return house.artist.toLowerCase().includes(value)
     })
-    console.log("filter_name", filter_name)
-    console.log("filter_artist", filter_artist)
     const filter = [...new Set([...filter_name, ...filter_artist])]
 
     update(filter, value)
   }
-
-
 
   return (
     <TextField
