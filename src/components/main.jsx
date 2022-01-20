@@ -1,15 +1,15 @@
-import { useState, useMemo, useEffect } from "react"
+import { useState, useEffect } from "react"
 
 import React from "react"
-import HousesList from "./HouseList"
-import Loading from "./Loading"
+import HousesList from "./houseList"
+import Loading from "./loading"
 import items from "../data/data"
-import Searchbar from "./Searchbar"
+import Searchbar from "./searchbar"
 
 export default function Main() {
+  const  housesAll = formatData(items)
   const [houses, setHouses] = useState(formatData(items))
-  const [housesAll, setHousesAll] = useState(formatData(items))
-  const [term, setTerm] = useState("")
+   const [term, setTerm] = useState("")
 
   useEffect(() => {
      setHouses(houses)

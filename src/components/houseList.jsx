@@ -1,4 +1,4 @@
- import House from "./House";
+ import House from "./house";
    
 export default function HousesList({ houses }) {
  
