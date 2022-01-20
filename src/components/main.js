@@ -9,7 +9,7 @@ import Searchbar from "./Searchbar"
 export default function Main() {
   const [houses, setHouses] = useState(formatData(items))
   const [housesAll, setHousesAll] = useState(formatData(items))
-  const [term, setTerm] = useState("apartment")
+  const [term, setTerm] = useState("")
 
   useEffect(() => {
      setHouses(houses)

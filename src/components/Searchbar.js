@@ -1,24 +1,30 @@
 import React from "react"
+import TextField from "@mui/material/TextField"
+import Box from "@mui/material/Box"
 
-export default ({ term, data, update }) => { 
-
+export default ({ term, data, update }) => {
   const dataSearch = (e) => {
-    const value = e.target.value.toLowerCase()  
+    const value = e.target.value.toLowerCase()
     const filter = data.filter((house) => {
       return house.name.toLowerCase().includes(value)
-    }) 
-    update(filter,value) 
+    })
+    update(filter, value)
   }
 
   return (
-    <div className="searchbar form-group">
-      <input
-        value={term}
-        type="text"
-        className="form-control"
-        placeholder="Search..."
-        onChange={dataSearch}
-      />
-    </div>
+    <TextField
+      id="filled-basic"
+      label="name or type of house..."
+      variant="filled"
+      sx={{
+        display: "flex",
+        p: 1,
+        m: 1,
+      }}
+      value={term}
+      type="text"
+      placeholder="Search..."
+      onChange={dataSearch}
+    />
   )
 }
