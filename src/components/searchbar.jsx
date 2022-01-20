@@ -1,7 +1,7 @@
 import React from "react"
 import TextField from "@mui/material/TextField"
 
-export default function SearchBar({ term, data, update }) {
+export  function SearchBar({ term, data, update }) {
   const dataSearch = (e) => {
     const value = e.target.value.toLowerCase()
 
@@ -19,7 +19,7 @@ export default function SearchBar({ term, data, update }) {
   return (
     <TextField
       id="filled-basic"
-      label="name or type of house..."
+      label="Name or Artist of House..."
       variant="filled"
       sx={{
         display: "flex",

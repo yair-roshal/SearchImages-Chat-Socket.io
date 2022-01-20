@@ -1,6 +1,7 @@
 import React from "react";
 import loadingGif from "../images/gif/loading-arrow.gif";
-export default function Loading() {
+
+export  function Loading() {
   return (
     <div className="loading">
       <h4>houses data loading...</h4>

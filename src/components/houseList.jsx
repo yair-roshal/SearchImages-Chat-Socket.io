@@ -1,6 +1,6 @@
- import House from "./house";
+ import {House} from "./house";
    
-export default function HousesList({ houses }) {
+export  function HousesList({ houses }) {
  
   if (houses.length === 0) {
     return (

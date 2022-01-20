@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react"
 
 import React from "react"
-import HousesList from "./houseList"
-import Loading from "./loading"
-import items from "../data/data"
-import SearchBar from "./searchBar"
+import {HousesList} from "./houseList"
+import {Loading} from "./loading"
+import {items} from "../data/data"
+import {SearchBar} from "./searchBar"
 
-export default function Main() {
+export  function Main() {
   const housesAll = formatData(items)
   const [houses, setHouses] = useState(formatData(items))
   const [term, setTerm] = useState("")
