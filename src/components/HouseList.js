@@ -1,6 +1,5 @@
  import House from "./House";
-// import houses from "../pages/houses";
-  
+   
 export default function HousesList({ houses }) {
  
   if (houses.length === 0) {

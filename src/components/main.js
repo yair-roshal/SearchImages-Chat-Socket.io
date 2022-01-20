@@ -1,23 +1,21 @@
-import { createContext, useState, useContext, useMemo, useEffect } from "react"
-// import Card from "../components/Card"
-import HouseContainer from "../components/HouseContainer"
+import { useState, useMemo, useEffect } from "react"
 
 import React from "react"
-// import HousesFilter from "./HouseFilter";
 import HousesList from "./HouseList"
-// import { withHouseConsumer } from "../context";
 import Loading from "./Loading"
 import items from "../data/data"
+import Searchbar from "./Searchbar"
 
 export default function Main() {
-  // const [userName, setUserName] = useState("John Smith")
-  const [houses, setHouses] = useState([])
-  // const value = useMemo(() => ({ userName, setUserName }), [userName])
+  const [houses, setHouses] = useState(formatData(items))
+  const [housesAll, setHousesAll] = useState(formatData(items))
+
+  const [term, setTerm] = useState("apartment")
 
   useEffect(() => {
-    // let houses = formatData(items)
-    setHouses( formatData(items))
-  }, [])
+     setHouses(houses)
+    setTerm(term)
+  }, [houses,term])
 
   function formatData(items) {
     let tempItems = items.map((item) => {
@@ -29,30 +27,39 @@ export default function Main() {
     return tempItems
   }
 
-  // const { loading, sortedHouses, houses } = context;
+  
+  function updateData(data,term) { 
+    console.log('data_updateData', data);
+    console.log('term_updateData', term);
 
-  // if (loading) {
-  //   return <Loading />;
+    setHouses(data)
+     setTerm(term)
+
+  }
+
+ 
+  if (!houses) {
+    return <Loading />
+  }
+
+  // if (houses.length === 0) {
+  //   return (
+  //     <div className="empty-search">
+  //       <h3>unfortunately no houses matched your search parameters</h3>
+  //     </div>
+  //   );
   // }
+
+  // setHouses(formatData(items))
 
   return (
     <div>
-      {/* <UserNameInput />
-      <UserInfo /> */}
-
+       <Searchbar
+            term={term}
+            data={housesAll}
+            update={updateData}
+          />
       <HousesList houses={houses} />
     </div>
   )
 }
-
-// function UserNameInput() {
-//   const { userName, setUserName } = useContext(UserContext)
-//   const changeHandler = (event) => setUserName(event.target.value)
-
-//   return <input type="text" value={userName} onChange={changeHandler} />
-// }
-
-// function UserInfo() {
-//   const { userName } = useContext(UserContext)
-//   return <span>{userName}</span>
-// }

@@ -31,7 +31,7 @@ export default [
       climate: false,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -87,7 +87,7 @@ export default [
       climate: false,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -143,7 +143,7 @@ export default [
       climate: false,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -199,7 +199,7 @@ export default [
       climate: true,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -255,7 +255,7 @@ export default [
       climate: false,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -311,7 +311,7 @@ export default [
       climate: false,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -367,7 +367,7 @@ export default [
       climate: false,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -423,7 +423,7 @@ export default [
       climate: true,
       featured: true,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -479,7 +479,7 @@ export default [
       climate: false,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -535,7 +535,7 @@ export default [
       climate: false,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -591,7 +591,7 @@ export default [
       climate: false,
       featured: false,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -647,7 +647,7 @@ export default [
       climate: true,
       featured: true,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
@@ -703,7 +703,7 @@ export default [
       climate: true,
       featured: true,
       description:
-        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School. This gorgeous home has corner street frontage and presents a variety of indoor and outdoor cosmopolitan features with access to community facilities where you can enjoy the use of the swimming pool, gym and tennis courts. Offering a relaxed and peaceful environment, this great home also features gourmet kitchen with stainless steel appliances, dishwasher and gas cooking, open plan lounge and dining area which steps out onto sunny rear deck and enclosed yard - Perfect for afternoon BBQs.",
+        "McGrath Rouse Hill is delighted to present this near new property located within a short walk from transport, Rouse Hill Town Centre and Ironbark Ridge Public School.",
       extras: [
         "Three bedrooms all with built-ins, two rooms with private balcony",
         "Two full bathrooms plus separate guest powder room downstairs",
