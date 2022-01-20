@@ -1,7 +1,8 @@
 import React from "react"
 import TextField from "@mui/material/TextField"
  
-export default ({ term, data, update }) => {
+export default function SearchBar({ term, data, update }) {  
+  
   const dataSearch = (e) => {
     const value = e.target.value.toLowerCase()
 

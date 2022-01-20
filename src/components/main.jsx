@@ -4,7 +4,7 @@ import React from "react"
 import HousesList from "./houseList"
 import Loading from "./loading"
 import items from "../data/data"
-import Searchbar from "./searchbar"
+import SearchBar from "./searchBar"
 
 export default function Main() {
   const  housesAll = formatData(items)
@@ -35,7 +35,7 @@ export default function Main() {
  
   return (
     <div>
-       <Searchbar
+       <SearchBar
             term={term}
             data={housesAll}
             update={updateData}
