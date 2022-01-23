@@ -25,6 +25,7 @@ export  function Main() {
     })
     return tempItems
   }
+  
   function updateData(data, term) {
     setHouses(data)
     setTerm(term)

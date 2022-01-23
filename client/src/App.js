@@ -11,7 +11,7 @@ export function App() {
       <Routes>
         <Route path="/" exact={true} element={<NameForm />} />
         <Route path="/main" element={<Main />} />
-        <Route path="/houses/:id" element={<SingleHouse />} />
+        <Route path="/houses/:id" element={<SingleHouse/>} />
       </Routes>
     </BrowserRouter>
   )
