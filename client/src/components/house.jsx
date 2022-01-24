@@ -2,10 +2,28 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "react-router-dom";
 
+import { useParams } from 'react-router-dom'
+// hooks
+import { useLocalStorage, useChat } from '../hooks'
+// components
+import { MessageForm } from './ChatRoom/MessageForm'
+import { MessageList } from './ChatRoom/MessageList'
+import { UserList } from './ChatRoom/UserList'
+// styles
+import { Container } from 'react-bootstrap'
+
 export  function House({ house }) {
   const { id,name, image, description, artist } = house
+ 
+  const { roomId } = useParams()
+  const [username] = useLocalStorage('username')
+  const { users, messages, sendMessage, removeMessage } = useChat(roomId)
+
   return (
-    <article className="house">
+
+  <div>
+  
+  <article className="house">
       <div className="img-container">
         <img src={image} alt="apartment house" />
 
@@ -17,6 +35,13 @@ export  function House({ house }) {
       <p className="house-artist">{artist}</p>
       <p className="house-description">{description}</p>
     </article>
+
+
+
+
+</div>
+
+  
   )
 }
 

@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid'
 // hooks
 import { useLocalStorage, useBeforeUnload } from '../hooks'
 
-const SERVER_URL = 'http://localhost:5000'
+const SERVER_URL = 'http://localhost:3000'
 
 export const useChat = (roomId) => {
   const [users, setUsers] = useState([])

@@ -1,12 +1,15 @@
 import React from "react"
 import { useParams } from "react-router-dom"
 import { items } from "../data/data"
- 
-export function SingleHouse(props) {
-  let params = useParams()
+// hooks
+import { useLocalStorage, useChat } from "../hooks"
+// components
+import { MessageForm } from "./ChatRoom/MessageForm"
+import { MessageList } from "./ChatRoom/MessageList"
+// styles
+import { Container,Grid, Row, Col } from "react-bootstrap"
 
-  const housesAll = formatData(items)
-
+ export function SingleHouse(props) {
   function formatData(items) {
     let tempItems = items.map((item) => {
       let id = item.sys.id
@@ -17,24 +20,41 @@ export function SingleHouse(props) {
     return tempItems
   }
 
-  const { artist, description, image, name } = housesAll[params.id-1]
+  const { roomId } = useParams()
+  const housesAll = formatData(items)
+  console.log("housesAll", housesAll)
+  const { artist, image, name } = housesAll[roomId]
+
+  const [username] = useLocalStorage("username")
+  const { messages, sendMessage, removeMessage } = useChat(roomId)
 
   return (
     <div>
-      {console.log("housesAll", housesAll[0])}
-   
-      <h1>Id: {params.id}</h1>
-  
-      <article className="house">
+      <Container>
+        <Row>
+          <Col>
+            
+              <h2 className="text-center">
+                Room: {roomId === "job" ? "Job" : "Free"}
+              </h2>
+              <MessageList messages={messages} removeMessage={removeMessage} />
+              <MessageForm username={username} sendMessage={sendMessage} />
+         
+          </Col>
+          <Col>
+           
+            <article className="house">
+              <h1>Id: {roomId}</h1>
 
-      <p className="house-title">{name}</p>
-      <p className="house-artist">{artist}</p>
-      <div className="img-container">
-        <img src={image} alt="apartment house" /> 
-      </div>
-    </article>
-      
+              <p className="house-title">{name}</p>
+              <p className="house-artist">{artist}</p>
+              <div className="img-container">
+                <img src={image} alt="apartment house" />
+              </div>
+            </article>
+          </Col>
+        </Row>
+      </Container>
     </div>
   )
 }
- 
