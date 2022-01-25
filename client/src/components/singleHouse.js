@@ -1,9 +1,7 @@
 import React from "react"
 import { useParams } from "react-router-dom"
-import { items } from "../data/data"
-// hooks
-import { useLocalStorage, useChat } from "../hooks"
-// components
+import { items } from "../data/data" 
+import { useLocalStorage, useChat } from "../hooks" 
 import { MessageForm } from "./ChatRoom/MessageForm"
 import { MessageList } from "./ChatRoom/MessageList"
   
@@ -39,7 +37,7 @@ export function SingleHouse() {
         </div>
 
         <div className="column-2">
-          <h2 className="text-center">Room: {artist}</h2>
+          <h2 className="text-center">Chat</h2>
           <MessageList messages={messages}   />
           <MessageForm username={username} sendMessage={sendMessage} />
         </div>

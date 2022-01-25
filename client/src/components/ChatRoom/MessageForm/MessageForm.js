@@ -20,12 +20,13 @@ export const MessageForm = ({ username, sendMessage }) => {
     <>
       <form onSubmit={handleSendMessage}>
            <input
+           className="inputInner"
             value={text}
             onChange={handleChangeText}
             type='text'
-            placeholder='Message...'
+            placeholder='Type your message here'
           />
-          <button type='submit' className="btn-primary">
+          <button type='submit' className="btn-send">
             SEND
           </button> 
        </form>

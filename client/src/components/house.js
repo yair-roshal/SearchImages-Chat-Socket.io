@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "react-router-dom" 
       
-export function House({ house, username }) {
+export function House({ house }) {
   const { id, name, image, description, artist } = house 
      return (
     <div>

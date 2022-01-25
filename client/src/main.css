@@ -6,10 +6,8 @@
 :root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
-  --offWhite: #f7f7f7;
-  --mainBlack: #222;
-  --mainGrey: #ececec;
-  --darkGrey: #cfcfcf;
+   --mainBlack: #222;
+   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -29,35 +27,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
-h1 {
-  font-size: 3em;
-  line-height: 1;
-  margin-bottom: 0.5em;
-}
-h2 {
-  font-size: 2em;
-  margin-bottom: 0.75em;
-}
-h3 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin-bottom: 1em;
-}
-h4 {
-  font-size: 1.2em;
-  line-height: 1.25;
-  margin-bottom: 1.25em;
-}
-h5 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 1.5em;
-}
-h6 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 1.5em;
-}
+ 
 
 .btn-primary {
   display: inline-block;
@@ -74,6 +44,23 @@ h6 {
 .btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
+}
+.btn-send {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--dark-color-a);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--dark-color-b);
+  border-radius: 3px;
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-send:hover {
+  background: transparent;
+  color: var(--dark-color-b);
 }
 .loading {
   text-transform: capitalize;
@@ -93,15 +80,7 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 /* end of globals */
-
-.empty-search {
-  text-align: center;
-  text-transform: capitalize;
-  margin: 2rem 0;
-  padding: 1rem;
-  letter-spacing: var(--mainSpacing);
-}
-
+ 
 /* houselist */
 .houseslist {
   padding: 2rem 0;
@@ -151,7 +130,7 @@ h6 {
 .img-container2 img {
   width: 100%;
   display: block;
- }
+}
 
 .house-link {
   position: absolute;
@@ -166,7 +145,7 @@ h6 {
 .img-container:hover img {
   opacity: 0.3;
 }
- 
+
 .img-container:hover .house-link {
   transform: translate(-50%, -50%) scale(1);
 }
@@ -196,10 +175,10 @@ h6 {
 
 /* start of join-main  */
 .join-main {
-   padding: 30px 40px;
+  padding: 30px 40px;
   background: var(--dark-color-b);
 }
- 
+
 .join-main .form-control {
   margin-bottom: 20px;
 }
@@ -216,7 +195,6 @@ h6 {
   width: 100%;
 }
 
- 
 /* end of join-main  */
 
 .wrapper {
@@ -224,10 +202,10 @@ h6 {
   grid-template-columns: 50% 30%;
 }
 .column-1 {
- margin-right: 2rem;
+  margin-right: 2rem;
 }
- 
-input[type=text]   {
+
+.inputInner {
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -237,8 +215,7 @@ input[type=text]   {
   border-radius: 4px;
   box-sizing: border-box;
 }
-input[type=text]:focus {
+
+.inputInner:focus {
   background-color: lightblue;
 }
-
- 
