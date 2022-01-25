@@ -35,18 +35,10 @@ export function NameForm() {
         <Form.Label>Name:</Form.Label>
         <Form.Control value={username} onChange={handleChangeName} />
       </Form.Group>
-      {/* <Form.Group>
-        <Form.Label>Room:</Form.Label>
-        <Form.Control as='select' value={roomId} onChange={handleChangeRoom}>
-          <option value='main'>main</option>
-          <option value='job' disabled>
-            Job
-          </option>
-        </Form.Control>
-      </Form.Group> */}
+   
       {trimmed && (
         <Button variant='success' as={Link} to={`/${roomId}`} ref={linkRef}>
-          Chat
+          Enter
         </Button>
       )}
     </Form>
