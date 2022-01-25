@@ -7,9 +7,11 @@ import { useLocalStorage, useChat } from "../hooks"
 import { MessageForm } from "./ChatRoom/MessageForm"
 import { MessageList } from "./ChatRoom/MessageList"
 // styles
-import { Container,Grid, Row, Col } from "react-bootstrap"
+import { Container, Grid, Row, Col } from "react-bootstrap"
 
- export function SingleHouse(props) {
+export function SingleHouse() {
+  const [username] = useLocalStorage("username")
+
   function formatData(items) {
     let tempItems = items.map((item) => {
       let id = item.sys.id
@@ -25,36 +27,28 @@ import { Container,Grid, Row, Col } from "react-bootstrap"
   console.log("housesAll", housesAll)
   const { artist, image, name } = housesAll[roomId]
 
-  const [username] = useLocalStorage("username")
+  // const [username] = useLocalStorage("username")
   const { messages, sendMessage, removeMessage } = useChat(roomId)
 
   return (
     <div>
-      <Container>
-        <Row>
-          <Col>
-            
-              <h2 className="text-center">
-                Room: {roomId === "job" ? "Job" : "Free"}
-              </h2>
-              <MessageList messages={messages} removeMessage={removeMessage} />
-              <MessageForm username={username} sendMessage={sendMessage} />
-         
-          </Col>
-          <Col>
-           
-            <article className="house">
-              <h1>Id: {roomId}</h1>
+      <div className="wrapper">
+        <div className="col1">
+          <article className="house"> 
+            <p className="house-title">{name}</p>
+            <p className="house-artist">{artist}</p>
+            <div className="img-container">
+              <img src={image} alt="apartment house" />
+            </div>
+          </article>
+        </div>
 
-              <p className="house-title">{name}</p>
-              <p className="house-artist">{artist}</p>
-              <div className="img-container">
-                <img src={image} alt="apartment house" />
-              </div>
-            </article>
-          </Col>
-        </Row>
-      </Container>
+        <div className="col2">
+          <h2 className="text-center">Room: {artist}</h2>
+          <MessageList messages={messages} removeMessage={removeMessage} />
+          <MessageForm username={username} sendMessage={sendMessage} />
+        </div>
+      </div>
     </div>
   )
 }

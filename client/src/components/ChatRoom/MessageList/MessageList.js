@@ -5,7 +5,7 @@ import { ListGroup } from 'react-bootstrap'
 import { MessageListItem } from './MessageListItem'
 
 const listStyles = {
-  height: '80vh',
+   height: '80vh',
   border: '1px solid rgba(0,0,0,.4)',
   borderRadius: '4px',
   overflow: 'auto'

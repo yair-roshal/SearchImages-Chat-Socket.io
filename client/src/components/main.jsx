@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react"
 
 import React from "react"
-import {HousesList} from "./houseList"
-import {Loading} from "./loading"
-import {items} from "../data/data"
-import {SearchBar} from "./searchBar"
+import { HousesList } from "./houseList"
+import { Loading } from "./loading"
+import { items } from "../data/data"
+import { SearchBar } from "./searchBar"
 
-export  function Main() {
+ 
+export function Main(props) {
+  
+  const location = window.location.href
+  const pos = location.indexOf("=")
+  const username = location.slice(pos + 1)
+
   const housesAll = formatData(items)
   const [houses, setHouses] = useState(formatData(items))
   const [term, setTerm] = useState("")
@@ -25,7 +31,7 @@ export  function Main() {
     })
     return tempItems
   }
-  
+
   function updateData(data, term) {
     setHouses(data)
     setTerm(term)
@@ -34,10 +40,12 @@ export  function Main() {
     return <Loading />
   }
 
+ 
+
   return (
-    <div>
+    <div> 
       <SearchBar term={term} data={housesAll} update={updateData} />
-      <HousesList houses={houses} />
+      <HousesList houses={houses} username={username}/>
     </div>
   )
 }
