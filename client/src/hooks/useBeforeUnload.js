@@ -18,6 +18,5 @@ export const useBeforeUnload = (value) => {
   useEffect(() => {
     window.addEventListener('beforeunload', handleBeforeunload)
     return () => window.removeEventListener('beforeunload', handleBeforeunload)
-    // eslint-disable-next-line
-  }, [])
+   }, [])
 }

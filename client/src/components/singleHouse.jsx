@@ -6,9 +6,7 @@ import { useLocalStorage, useChat } from "../hooks"
 // components
 import { MessageForm } from "./ChatRoom/MessageForm"
 import { MessageList } from "./ChatRoom/MessageList"
-// styles
-import { Container, Grid, Row, Col } from "react-bootstrap"
-
+  
 export function SingleHouse() {
   const [username] = useLocalStorage("username")
 
@@ -24,31 +22,28 @@ export function SingleHouse() {
 
   const { roomId } = useParams()
   const housesAll = formatData(items)
-  console.log("housesAll", housesAll)
-  const { artist, image, name } = housesAll[roomId]
-
-  // const [username] = useLocalStorage("username")
-  const { messages, sendMessage, removeMessage } = useChat(roomId)
+   const { artist, image, name } = housesAll[roomId] 
+   const { messages, sendMessage } = useChat(roomId)
 
   return (
-    <div>
+    
       <div className="wrapper">
-        <div className="col1">
+        <div className="column-1">
           <article className="house"> 
             <p className="house-title">{name}</p>
             <p className="house-artist">{artist}</p>
-            <div className="img-container">
+            <div className="img-container2">
               <img src={image} alt="apartment house" />
             </div>
           </article>
         </div>
 
-        <div className="col2">
+        <div className="column-2">
           <h2 className="text-center">Room: {artist}</h2>
-          <MessageList messages={messages} removeMessage={removeMessage} />
+          <MessageList messages={messages}   />
           <MessageForm username={username} sendMessage={sendMessage} />
         </div>
       </div>
-    </div>
+  
   )
 }

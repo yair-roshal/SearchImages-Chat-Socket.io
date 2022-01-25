@@ -7,23 +7,22 @@ const io = require('socket.io')(server, {
 const log = console.log
 
 const registerMessageHandlers = require('./handlers/messageHandlers')
-const registerUserHandlers = require('./handlers/userHandlers')
+// const registerUserHandlers = require('./handlers/userHandlers')
 
 const onConnection = (socket) => {
   log('User connected')
 
   const { roomId } = socket.handshake.query
 
-  log('roomId',roomId)
-  console.log('roomId', roomId);
-  console.log('roomId222');
+  log('roomId=',roomId)
+ 
 
   socket.roomId = roomId
 
   socket.join(roomId)
 
   registerMessageHandlers(io, socket)
-  registerUserHandlers(io, socket)
+  // registerUserHandlers(io, socket)
 
   socket.on('disconnect', () => {
     log('User disconnected')
@@ -33,7 +32,7 @@ const onConnection = (socket) => {
 
 io.on('connection', onConnection)
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 server.listen(PORT, () => {
   console.log(`Server ready. Port: ${PORT}`)
  

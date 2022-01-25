@@ -1,9 +1,5 @@
 import { useState } from 'react'
-// styles
-import { Form, Button } from 'react-bootstrap' 
-// icons
-import { FiSend } from 'react-icons/fi'
- 
+  
 export const MessageForm = ({ username, sendMessage }) => {
   const [text, setText] = useState('')
  
@@ -22,19 +18,18 @@ export const MessageForm = ({ username, sendMessage }) => {
 
   return (
     <>
-      <Form onSubmit={handleSendMessage}>
-        <Form.Group className='d-flex'> 
-          <Form.Control
+      <form onSubmit={handleSendMessage}>
+           <input
             value={text}
             onChange={handleChangeText}
             type='text'
             placeholder='Message...'
           />
-          <Button variant='success' type='submit'>
-            <FiSend />
-          </Button>
-        </Form.Group>
-      </Form>
+          <button type='submit' className="btn-primary">
+            SEND
+          </button> 
+       </form>
+ 
       </>
   )
 }

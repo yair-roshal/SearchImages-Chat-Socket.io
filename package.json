@@ -10,8 +10,12 @@
     "socket.io-client": "^4.4.1"
   },
   "scripts": {
-    "server": "yarn --cwd server dev",
-    "client": "yarn --cwd client start",
-    "start": "  concurrently  \" yarn client \"  \"  yarn server  \"   "
+    "client": "npm start --prefix client",
+    "server": "npm run dev --prefix server",
+    "start_npm": "concurrently \"npm run client\" \"npm run server\" ",
+
+    "server2": "yarn --cwd server dev",
+    "client2": "yarn --cwd client start",
+    "start_yarn": "  concurrently  \" yarn client2 \"  \"  yarn server2  \"   "
   }
 }

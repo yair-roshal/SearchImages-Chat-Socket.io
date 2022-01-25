@@ -6,13 +6,7 @@ import { Loading } from "./loading"
 import { items } from "../data/data"
 import { SearchBar } from "./searchBar"
 
- 
-export function Main(props) {
-  
-  const location = window.location.href
-  const pos = location.indexOf("=")
-  const username = location.slice(pos + 1)
-
+export function Main() {
   const housesAll = formatData(items)
   const [houses, setHouses] = useState(formatData(items))
   const [term, setTerm] = useState("")
@@ -40,12 +34,10 @@ export function Main(props) {
     return <Loading />
   }
 
- 
-
   return (
-    <div> 
+    <div>
       <SearchBar term={term} data={housesAll} update={updateData} />
-      <HousesList houses={houses} username={username}/>
+      <HousesList houses={houses} />
     </div>
   )
 }

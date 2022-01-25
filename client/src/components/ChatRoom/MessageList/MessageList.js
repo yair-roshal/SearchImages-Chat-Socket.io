@@ -1,17 +1,15 @@
-import { useRef, useEffect } from 'react'
-// styles
-import { ListGroup } from 'react-bootstrap'
-// components
+import { useRef, useEffect } from 'react' 
 import { MessageListItem } from './MessageListItem'
+import List from "@mui/material/List"
 
 const listStyles = {
-   height: '80vh',
+   height: '70vh',
   border: '1px solid rgba(0,0,0,.4)',
   borderRadius: '4px',
   overflow: 'auto'
 }
 
-export const MessageList = ({ messages, removeMessage }) => {
+export const MessageList = ({ messages }) => {
   const messagesEndRef = useRef(null)
 
   useEffect(() => {
@@ -22,16 +20,15 @@ export const MessageList = ({ messages, removeMessage }) => {
 
   return (
     <>
-      <ListGroup variant='flush' style={listStyles}>
+      <List   sx={{  bgcolor: '#ececec' }}   style={listStyles}>
         {messages.map((msg) => (
           <MessageListItem
             key={msg.messageId}
             msg={msg}
-            removeMessage={removeMessage}
-          />
+           />
         ))}
         <span ref={messagesEndRef}></span>
-      </ListGroup>
+      </List>
     </>
   )
 }

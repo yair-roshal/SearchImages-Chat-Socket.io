@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import io from 'socket.io-client'
 import { nanoid } from 'nanoid'
-// hooks
-import { useLocalStorage, useBeforeUnload } from '../hooks'
+ import { useLocalStorage, useBeforeUnload } from '../hooks'
 
-const SERVER_URL = 'http://localhost:3000'
+const SERVER_URL = 'http://localhost:5000'
 
 export const useChat = (roomId) => {
   const [users, setUsers] = useState([])
@@ -47,14 +46,10 @@ export const useChat = (roomId) => {
       senderName
     })
   }
-
-  const removeMessage = (id) => {
-    socketRef.current.emit('message:remove', id)
-  }
-
+  
   useBeforeUnload(() => {
     socketRef.current.emit('user:leave', userId)
   })
 
-  return { users, messages, sendMessage, removeMessage }
+  return { users, messages, sendMessage    }
 }
