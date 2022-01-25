@@ -4,13 +4,13 @@
       "messageId": "1",
       "senderName": "Bob",
       "messageText": "How are you?",
-      "createdAt": "2022-01-25"
+      "createdAt": "2022-01-01"
     },
     {
       "messageId": "2",
       "senderName": "Alice",
       "messageText": "Fine!And you?",
-      "createdAt": "2022-01-25"
+      "createdAt": "2022-01-01"
     },
     {
       "messageId": "IZP8U86U",
@@ -122,6 +122,20 @@
       "createdAt": "2022-01-25T19:22:34.258Z",
       "userId": "Ix1YfxnU",
       "messageText": "34534",
+      "senderName": "yairrr"
+    },
+    {
+      "messageId": "Pon7OBjk",
+      "createdAt": "2022-01-25T19:23:23.777Z",
+      "userId": "Ix1YfxnU",
+      "messageText": "12",
+      "senderName": "yairrr"
+    },
+    {
+      "messageId": "s1X9zA_w",
+      "createdAt": "2022-01-25T19:27:05.199Z",
+      "userId": "Ix1YfxnU",
+      "messageText": "123",
       "senderName": "yairrr"
     }
   ]
