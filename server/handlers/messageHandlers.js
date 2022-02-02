@@ -27,7 +27,6 @@ db.defaults({
 module.exports = (io, socket) => {
   const getMessages = () => {
     const messages = db.get('messages').value()
-
     io.in(socket.roomId).emit('messages', messages)
   }
 
@@ -43,13 +42,7 @@ module.exports = (io, socket) => {
     getMessages()
   }
 
-  const removeMessage = (messageId) => {
-    db.get('messages').remove({ messageId }).write()
-
-    getMessages()
-  }
-
+ 
   socket.on('message:get', getMessages)
   socket.on('message:add', addMessage)
-  socket.on('message:remove', removeMessage)
-}
+ }
