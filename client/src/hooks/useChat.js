@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import io from 'socket.io-client'
 import { nanoid } from 'nanoid'
- import { useLocalStorage, useBeforeUnload } from '../hooks'
+ import { useLocalStorage } from '../hooks'
 
 const SERVER_URL = 'http://localhost:5000'
 
