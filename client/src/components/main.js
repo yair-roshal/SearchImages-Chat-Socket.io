@@ -16,6 +16,11 @@ export function Main() {
     setTerm(term)
   }, [houses, term])
 
+  function updateData(data, term) {
+    setHouses(data)
+    setTerm(term)
+  }
+  
   function formatData(items) {
     let tempItems = items.map((item) => {
       let id = item.sys.id
@@ -26,10 +31,8 @@ export function Main() {
     return tempItems
   }
 
-  function updateData(data, term) {
-    setHouses(data)
-    setTerm(term)
-  }
+
+
   if (!houses) {
     return <Loading />
   }
